@@ -12,6 +12,7 @@ import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
+    AngularFirestoreModule,
   ],
   providers: [
     StatusBar,

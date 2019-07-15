@@ -17,6 +17,10 @@ export class AuthService {
     return this.afa.auth.createUserWithEmailAndPassword(user.email, user.password);
   }
 
+  logout(){
+    return this.afa.auth.signOut();
+  }
+
   getAuth(){
     return this.afa.auth;
   }
