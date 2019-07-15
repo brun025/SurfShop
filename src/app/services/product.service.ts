@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Product } from '../interfaces/product';
 import { map } from 'rxjs/operators';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,10 @@ import { map } from 'rxjs/operators';
 export class ProductService {
   private productsCollection: AngularFirestoreCollection<Product>;
 
-  constructor(private afs: AngularFirestore) { 
+  constructor(
+    private afs: AngularFirestore,
+    private authService: AuthService,
+  ) { 
     this.productsCollection = this.afs.collection<Product>('Products');
   }
 
