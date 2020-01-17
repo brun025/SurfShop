@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyC5Xr81C4SbmcLI7lhVxXbDR-UhqKl46Eg",
-    authDomain: "surfshop-b514e.firebaseapp.com",
-    databaseURL: "https://surfshop-b514e.firebaseio.com",
-    projectId: "surfshop-b514e",
+    apiKey: ,
+    authDomain: ,
+    databaseURL: ,
+    projectId: ,
     storageBucket: "",
-    messagingSenderId: "322712549242",
-    appId: "1:322712549242:web:58aef53f001d5197"
+    messagingSenderId: ,
+    appId:
   }
 };
 
